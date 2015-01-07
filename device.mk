@@ -14,7 +14,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/fstab.lenok:recovery/root/fstab.lenok
+    $(LOCAL_PATH)/fstab.lenok:root/fstab.lenok \
+    $(LOCAL_PATH)/init.recovery.lenok.rc:root/init.recovery.lenok.rc
 
 $(call inherit-product, build/target/product/full.mk)
 
